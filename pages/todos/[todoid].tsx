@@ -42,5 +42,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
     props: {
       todoid,
     },
+    // open ISG
+    revalidate: 5,
   };
 };
