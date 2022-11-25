@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import Link from "next/link";
 
 type Props = {
   todos: Array<{
@@ -12,7 +13,7 @@ const Todos = ({ todos }) => {
     <ul>
       {todos.map(({ title, id }) => (
         <li key={id}>
-          {id} : {title}
+          {id} : <Link href={`/todos/${id}`}>{title}</Link>
         </li>
       ))}
     </ul>
