@@ -11,7 +11,7 @@ const Todos = ({ todos }) => {
   return (
     <ul>
       {todos.map(({ title, id }) => (
-        <li>
+        <li key={id}>
           {id} : {title}
         </li>
       ))}
@@ -28,8 +28,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const res = await fetch("http://localhost:3000/todos.json");
 
   const todos = await res.json();
-
-  console.log({ todos });
 
   return {
     props: {
