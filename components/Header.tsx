@@ -8,12 +8,18 @@ const Header = () => {
           <a href="/">HOME</a>
         </li>
         <li>
+          <a href="/todos">TODOS</a>
+        </li>
+        <li>
           <a href="/about">ABOUT</a>
         </li>
       </ul>
       <ul>
         <li>
           <Link href="/">Home with Link</Link>
+        </li>
+        <li>
+          <Link href="/todos">TODOS</Link>
         </li>
         <li>
           <Link href="/about">About with Link</Link>

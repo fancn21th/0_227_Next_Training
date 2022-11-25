@@ -4,7 +4,9 @@ const Home: NextPage = () => {
   return (
     <>
       <h1>Home</h1>
-      <a href="/todos.json">todos</a>
+      <h3>
+        static file <a href="/todos.json">todos.json</a>
+      </h3>
     </>
   );
 };

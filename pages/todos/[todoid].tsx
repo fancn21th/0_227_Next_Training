@@ -30,6 +30,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const todoid = context.params?.todoid as string;
 
+  console.log(`GetStaticProps is running`);
+
   if (!todoid) {
     return {
       notFound: true,
